@@ -7,11 +7,24 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0; // Indice actual
     var indexpos1=0;
     let indexpos2=0;
-  
+    var mov = -300;
+   
+    var i = 3;
+
+    for(i=3; i<images.length; i++) {
+        console.log("valor de mov antes: ", mov, "valor de ene: ", ene);
+        
+        console.log("valor de mov despues: ", mov)
+        images[i].style.transform = `translateX(${mov}px)`;
+        
+        console.log("imagen:", images[i], "puesta en el puntoX: ", mov);
+        mov = mov - 330;
+    }
+    
     // Función para mover una imagen
     function moveImage(index) {
         
-        
+       
         //console.log(images.length);
       if(index < images.length-2){
         indexpos1=index+1;
@@ -52,13 +65,13 @@ document.addEventListener("DOMContentLoaded", function() {
       //}, 2000); // Después de 2 segundos (tiempo de transición + 1 segundo)
   
       // Paso 4: Mover la imagen a -300 con transición suave y comenzar el bucle nuevamente
-      setTimeout(() => {
+      //setTimeout(() => {
         //images[index].style.opacity = '1';
         //image.style.transition = 'none'; // Quita la transición para mover instantáneamente
        // images[index].style.transform = `translateX(${moveDistance}px)`;
-        currentIndex = (currentIndex + 1) % images.length; // Actualiza el índice para la siguiente imagen
+        //currentIndex = (currentIndex + 1) % images.length; // Actualiza el índice para la siguiente imagen
         //setTimeout(() => moveImage(currentIndex), 1000); // Llama a la función de nuevo después de 1 segundo
-      }, 3000); // Después de 3 segundos (tiempo total)
+      //}, 3000); // Después de 3 segundos (tiempo total)
     }
   
     // Iniciar el bucle con la primera imagen
