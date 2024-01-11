@@ -25,29 +25,27 @@ document.addEventListener("DOMContentLoaded", function() {
         
       }else{
         indexpos1=0;
-        indexpos2=2;
+        indexpos2=1;
 
       }
     // Paso 1: Mover la imagen -300px con transición suave
            setTimeout(() => {
       images[index].style.transform = `translateX(${moveDistance}px)`;
-      console.log('index');
-      console.log(index);
+      
       images[indexpos1].style.transform=`translateX(${moveDistance}px)`;
-      console.log('indexpos1=');
-      console.log(indexpos1);
+      
       images[indexpos2].style.transform=`translateX(${moveDistance}px)`;
-      console.log('indexpos2');
-      console.log(indexpos2);
+      
       
 
       },1000);
+
       // Paso 2: Ocultar la imagen
       setTimeout(() => {
         images[index].style.opacity = '0';
-      }, 1000); // Después de 1 segundo (tiempo de transición)
+      }, 2000); // Después de 1 segundo (tiempo de transición)
   
-      // Paso 3: Ubicar la imagen a +600px y hacerla visible
+      // Paso 3: Ubicar la imagen a +930px y hacerla visible
       setTimeout(() => {
         images[index].style.transform = `translateX(${hidePosition}px)`;
         
