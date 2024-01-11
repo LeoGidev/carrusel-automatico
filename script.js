@@ -43,19 +43,19 @@ document.addEventListener("DOMContentLoaded", function() {
       // Paso 2: Ocultar la imagen
       setTimeout(() => {
         images[index].style.opacity = '0';
-      }, 2000); // Después de 1 segundo (tiempo de transición)
+      }, 3000); // Después de 3 segundos (tiempo de transición)
   
       // Paso 3: Ubicar la imagen a +930px y hacerla visible
-      setTimeout(() => {
-        images[index].style.transform = `translateX(${hidePosition}px)`;
+     // setTimeout(() => {
+       // images[index].style.transform = `translateX(${hidePosition}px)`;
         
-      }, 2000); // Después de 2 segundos (tiempo de transición + 1 segundo)
+      //}, 2000); // Después de 2 segundos (tiempo de transición + 1 segundo)
   
       // Paso 4: Mover la imagen a -300 con transición suave y comenzar el bucle nuevamente
       setTimeout(() => {
-        images[index].style.opacity = '1';
+        //images[index].style.opacity = '1';
         //image.style.transition = 'none'; // Quita la transición para mover instantáneamente
-        images[index].style.transform = `translateX(${moveDistance}px)`;
+       // images[index].style.transform = `translateX(${moveDistance}px)`;
         currentIndex = (currentIndex + 1) % images.length; // Actualiza el índice para la siguiente imagen
         //setTimeout(() => moveImage(currentIndex), 1000); // Llama a la función de nuevo después de 1 segundo
       }, 3000); // Después de 3 segundos (tiempo total)
