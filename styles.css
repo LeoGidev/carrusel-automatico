@@ -12,6 +12,7 @@
     width: 300px;
     height: auto;
     margin-right: 30px; /* Espacio entre imágenes */
+    transition: transform 2s ease-in-out;
     
   }
   

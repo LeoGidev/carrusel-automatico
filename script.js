@@ -5,18 +5,41 @@ document.addEventListener("DOMContentLoaded", function() {
     const hidePosition = 600; // Posición para ocultar la imagen
     
     let currentIndex = 0; // Indice actual
-    
+    var indexpos1=0;
+    let indexpos2=0;
   
     // Función para mover una imagen
     function moveImage(index) {
-      
+        
+        
+        //console.log(images.length);
+      if(index < images.length-2){
+        indexpos1=index+1;
+        indexpos2=index+2;
+      }
+      else if(index < images.length-1){
+        indexpos1=index+1;
+        indexpos2=0;
+        //console.log("index+2 = que length");
+        //console.log(index+2, images.length);
+        
+      }else{
+        indexpos1=0;
+        indexpos2=2;
+
+      }
     // Paso 1: Mover la imagen -300px con transición suave
-      images[index].style.transition = 'transform 2s ease-in-out';
-      setTimeout(() => {
+           setTimeout(() => {
       images[index].style.transform = `translateX(${moveDistance}px)`;
+      console.log('index');
       console.log(index);
-      images[index+1].style.transform=`translateX(${moveDistance}px)`;
-      images[index+2].style.transform=`translateX(${moveDistance}px)`;
+      images[indexpos1].style.transform=`translateX(${moveDistance}px)`;
+      console.log('indexpos1=');
+      console.log(indexpos1);
+      images[indexpos2].style.transform=`translateX(${moveDistance}px)`;
+      console.log('indexpos2');
+      console.log(indexpos2);
+      
 
       },1000);
       // Paso 2: Ocultar la imagen
@@ -36,12 +59,14 @@ document.addEventListener("DOMContentLoaded", function() {
         //image.style.transition = 'none'; // Quita la transición para mover instantáneamente
         images[index].style.transform = `translateX(${moveDistance}px)`;
         currentIndex = (currentIndex + 1) % images.length; // Actualiza el índice para la siguiente imagen
-        setTimeout(() => moveImage(currentIndex), 1000); // Llama a la función de nuevo después de 1 segundo
+        //setTimeout(() => moveImage(currentIndex), 1000); // Llama a la función de nuevo después de 1 segundo
       }, 3000); // Después de 3 segundos (tiempo total)
     }
   
     // Iniciar el bucle con la primera imagen
-    moveImage(currentIndex);
+    setInterval(() => {
+        moveImage(currentIndex);
+        },2000); 
   });
   
   
