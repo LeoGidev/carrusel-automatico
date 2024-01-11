@@ -5,19 +5,15 @@
   
   .carousel-slide {
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 2s ease-in-out;
   }
   
   .carousel-image {
     width: 300px;
     height: auto;
     margin-right: 30px; /* Espacio entre imágenes */
-    filter: brightness(0.7); /* Imágenes más oscuras */
-    transition: filter 0.3s ease-in-out;
+    
   }
   
-  .carousel-image:focus {
-    width: 400px;
-    filter: brightness(1); /* Imagen central más brillante */
-  }
+
   
