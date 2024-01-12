@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
                    let xx = (diferencia*330)-330;
                    console.log("distanciaxx: ", xx);
                    console.log("valor de ind:", ind, "valor del largo de coleros:", coleros.length, "valor de el largo de imag:", imag.length);
+                imag[ind].style.opacity='1';
                 imag[ind].style.transform = `translateX(${xx}px)`;
                     }
 
@@ -74,12 +75,13 @@ document.addEventListener("DOMContentLoaded", function() {
      
 
         function ocultar(){
-            imag[index].style.opacity='0.5';
+            imag[index].style.opacity='0';
         }
         setTimeout(ocultar,4000);
       
    
         function volverainicio(){
+            imag[index].style.opacity='0';
            
             vuelta = 330*(imag.length-1);
             imag[index].style.transform = `translateX(${vuelta}px)`;
