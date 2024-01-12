@@ -9,27 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let coleros=[];
     let newindex=0;
 
-   // for(let i=0;i<imag.length;i++){
-     //   if (i<1){
-       // mov = 990;
-       
-        //}else if(i<2){
-          //  mov = 660;
-            
-
-      //  }
-    //    else if(i<3){
-        //    mov = 330;
-          //  a=-1;
-       // }
-       // else{mov = -330 * a;}
-        //console.log("valor de i:", i, "valor de a:", a, "valor de mov", mov);
-        //imag[i].style.transform = `translateX(${mov}px)`;
-        //a = a +1;
-
-
-    //}
   
+   
     
   
   
