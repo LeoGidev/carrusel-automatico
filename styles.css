@@ -1,6 +1,6 @@
 .carousel-container {
     overflow: hidden;
-    /*width: 930px; /* 3 imágenes de 300px cada una */
+    width:5900px; /* 3 imágenes de 300px cada una */
   }
   
   .carousel-slide {
@@ -13,6 +13,7 @@
     height: auto;
     margin-right: 30px; /* Espacio entre imágenes */
     transition: transform 2s ease-in-out;
+
     
   }
   
