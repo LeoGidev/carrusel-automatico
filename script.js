@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
                
             }
             }
-            console.log(coleros.length);
+            //console.log(coleros.length);
             if(coleros.length!=0 && coleros.length<imag.length){
                 for(ind=0;ind<coleros.length;ind++){
                     diferencia = (imag.length-coleros.length);
@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
 
             }
+            //imag[index].style.zindex='0';
     }
     
 
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
         function ocultar(){
             imag[index].style.opacity='0';
         }
-        setTimeout(ocultar,4000);
+        //setTimeout(ocultar,4000);
       
    
         function volverainicio(){
