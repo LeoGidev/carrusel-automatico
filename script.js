@@ -39,16 +39,17 @@ document.addEventListener("DOMContentLoaded", function() {
             if(coleros.length!=0 && coleros.length<imag.length){
                 for(ind=0;ind<coleros.length;ind++){
                     diferencia = (imag.length-coleros.length);
-                    console.log("dif:", diferencia);
+                    //console.log("dif:", diferencia);
                    let xx = (diferencia*330)-330;
-                   console.log("distanciaxx: ", xx);
-                   console.log("valor de ind:", ind, "valor del largo de coleros:", coleros.length, "valor de el largo de imag:", imag.length);
+                   //console.log("distanciaxx: ", xx);
+                   //console.log("valor de ind:", ind, "valor del largo de coleros:", coleros.length, "valor de el largo de imag:", imag.length);
                 imag[ind].style.opacity='1';
                 imag[ind].style.transform = `translateX(${xx}px)`;
                     }
+                    
 
             }
-            //imag[index].style.zindex='0';
+            
     }
     
 
@@ -56,10 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
      setTimeout(muevete, 2000);
      
 
-        function ocultar(){
-            imag[index].style.opacity='0';
-        }
-        //setTimeout(ocultar,4000);
+       
       
    
         function volverainicio(){
@@ -83,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Iniciar el bucle con la primera imagen
     setInterval(() => {
         moveImage(indiceactual);
-        },6000); 
+        },8000); 
   });
   
   

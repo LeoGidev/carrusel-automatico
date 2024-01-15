@@ -13,9 +13,10 @@
     width: 300px;
     height: auto;
     margin-right: 30px; /* Espacio entre imágenes */
-    transition: transform 2s ease-in-out;
+    transition: transform 4s ease-in-out;
     border-radius: 10px;
     z-index: 50;
+   
   }
 
   #cubridorcarro{
