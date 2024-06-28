@@ -1,5 +1,5 @@
 # Carrusel
-## .
+## Este es un pequeño carrusel en boostrap que uso en mi portafolio.
 ![imagen ilustratuva](example.png)
 
 
