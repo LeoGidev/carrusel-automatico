@@ -1,5 +1,5 @@
-# Arkanoid web
-## Este pequeño juego en Javascript es un ejemplo de práctica del uso de Canvas.
+# Carrusel
+## .
 ![imagen ilustratuva](example.png)
 
 
