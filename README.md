@@ -3,4 +3,4 @@
 ![imagen ilustratuva](example.png)
 
 
-Puedes probarla en mi Portafolio:[ir](https://leogidev.free.nf/Practicas/Arkanoid/)
+Puedes probarla en mi Portafolio:[ir](https://leogidev.free.nf/index.html?i=1)
